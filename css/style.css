@@ -229,6 +229,7 @@
 @media (max-width: 768px) {
     .carousel .carousel-item {
         min-height: 500px;
+        font-size:root 2rem;
     }
 
     .carousel .carousel-indicators {
@@ -247,7 +248,7 @@
 
 @media (min-width: 1200px) {
     .carousel .carousel-item .display-1 {
-        font-size: 7rem;
+        font-size: 4rem;
     }
 }
 
