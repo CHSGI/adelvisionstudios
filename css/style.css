@@ -176,6 +176,10 @@
     padding-left: 11rem;
     z-index: 1;
 }
+#header-carousel {
+    height: 100vh;
+    overflow: hidden;
+}
 
 .carousel .carousel-indicators {
     top: 0;
