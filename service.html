@@ -49,9 +49,9 @@
                     <h2 class="text-white fw-bold m-0">WELDORK</h2>
                 </a>
                 <div class="ms-auto d-flex align-items-center">
-                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</small>
-                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>info@example.com</small>
-                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</small>
+                    <small class="ms-4"><i class="fa fa-map-marker-alt me-3"></i>Chief Albert Iyorah street Lekki phase 1, Lagos Nigeria</small>
+                    <small class="ms-4"><i class="fa fa-envelope me-3"></i>hello@adelvisionstudios.com</small>
+                    <small class="ms-4"><i class="fa fa-phone-alt me-3"></i>+234 810 266 6455</small>
                     <div class="ms-3 d-flex">
                         <a class="btn btn-sm-square btn-light text-primary ms-2" href=""><i
                                 class="fab fa-facebook-f"></i></a>
@@ -269,7 +269,7 @@
                         </div>
                         <div class="ms-3">
                             <h6 class="text-white text-uppercase">Office Address</h6>
-                            <span class="text-white">123 Street, New York, USA</span>
+                            <span class="text-white">Chief Albert Iyorah street Lekki phase 1, Lagos Nigeria</span>
                         </div>
                     </div>
                     <hr class="bg-body">
@@ -286,47 +286,68 @@
                 <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.7s">
                     <div class="bg-white p-5">
                         <h2 class="text-uppercase mb-4">Contact Us</h2>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                        <form action="send_email.php" method="POST">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-light" id="name" name="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0 bg-light" id="mail" name="email" placeholder="Your Email">
+                                        <label for="mail">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0 bg-light" id="mobile" name="mobile" placeholder="Your Mobile">
+                                        <label for="mobile">Your Mobile</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-floating">
+                                        <select class="form-select border-0 bg-light" id="service" name="service">
+                                            <optgroup label="Pre production">
+                                                <option value="Concept Development">Concept Development</option>
+                                                <option value="Scriptwriting">Scriptwriting</option>
+                                                <option value="Production Planning">Production Planning</option>
+                                                <option value="Equipment Rental & Procurement">Equipment Rental & Procurement</option>
+                                            </optgroup>
+                                            <optgroup label="Production">
+                                                <option value="Cinematography">Cinematography</option>
+                                                <option value="Directing & Producing">Directing & Producing</option>
+                                            </optgroup>
+                                            <optgroup label="Post-Production">
+                                                <option value="Video Editing">Video Editing</option>
+                                                <option value="Color Grading">Color Grading</option>
+                                                <option value="Sound Design & Mixing">Sound Design & Mixing</option>
+                                                <option value="Visual Effects (VFX)">Visual Effects (VFX)</option>
+                                            </optgroup>
+                                            <optgroup label="Specialized Services">
+                                                <option value="Commercials & Brand Videos">Commercials & Brand Videos</option>
+                                                <option value="Music Videos">Music Videos</option>
+                                                <option value="Documentaries">Documentaries</option>
+                                                <option value="Event Coverage">Event Coverage</option>
+                                                <option value="Social Media Content">Social Media Content</option>
+                                                <option value="Live Streaming Production">Live Streaming Production</option>
+                                            </optgroup>
+                                        </select>
+                                        <label for="service">Choose A Service</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message" name="message" style="height: 130px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0 bg-light" id="mail" placeholder="Your Email">
-                                    <label for="mail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="mobile" placeholder="Your Mobile">
-                                    <label for="mobile">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select border-0 bg-light" id="service">
-                                        <option value="tv production">Tv Production</option>
-                                        <option value="commercial production">COmmercial Production</option>
-                                        <option value="corporate video">Corperate Video</option>
-                                        <option value="live event">Live Event</option>
-                                    </select>
-                                    <label for="service">Choose A Service</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message"
-                                        style="height: 130px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
